@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url(./recurso/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.principal {
+    min-height: 100vh;
+    width: 100%;
+
+    /* background: url(./recurso/rm222batch5-mind-24.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+
+form {
+    padding: 15px 0;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+input {
+    /* background: transparent; */
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 13px 0px;
+    width: 70%;
+    margin: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    text-align: center;
+    transition: all 500ms;
+}
+
+.conjunto3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input:focus {
+    /* border-color: #6bb1cc; */
+    transform: scale(1.07);
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 9px;
+
+}
+
+.subtitle {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+#textoo1,
+#textoo2,
+#textoo3,
+#textoo4 {
+    font-size: 14px;
+
+}
+
+#textoo5 {
+    font-size: 21px;
+    font-weight: 500;
+    width: 40%;
+
+}
+
+/* ------------titulo form------------------ */
+.instruccion {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    text-align: center;
+    color: #333333;
+}
+
+/* --------------mitad dos imagenes----------- */
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.images iframe {
+
+    width: 420px;
+    height: 590px;
+}
+
+.images .logo {
+
+    width: 400px;
+    filter: drop-shadow(10px 10px 10px);
+    transition: 0.4s ease;
+}
+
+.images .logo:hover {
+    transform: scale(1.06);
+}
+
+
+.logo {
+    margin-bottom: 30px;
+}
+
+/* ------------texto de bienvenida----------- */
+
+.texto1 {
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.texto2 {
+    font-weight: 500;
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/* ------boton-------- */
+
+.btn-grad {
+    background-image: linear-gradient(to right, #000428 0%, #004e92 51%, #000428 100%)
+}
+
+.btn-grad {
+    width: 35%;
+    margin: 15px;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(39, 39, 39, 0.809);
+    border-radius: 20px;
+    display: block;
+    border: solid 2px;
+}
+
+.btn-grad:hover {
+    transform: scale(0.87);
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:1545px) {
+    form{
+        width: 35%;
+
+    }
+}
+
+
+@media screen and (max-width: 1366px) {
+    .images .logo {
+        width: 350px;
+    }
+
+    .images iframe {
+        width: 400px;
+        height: 480px;
+    }
+
+    .instruccion {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1125px) {
+    form{
+        width: 40%;
+    }
+
+    .btn-grad{
+        width: 45%;
+    }
+
+
+}
+
+@media screen and (max-width: 1080px) {
+    .images .logo {
+
+        width: 300px
+    }
+
+    .images iframe {
+
+        display: none;
+    }
+
+    .instruccion {
+        font-size: 14px;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    .btn-grad {
+        display: block;
+        font-size: 15px;
+        padding: 18px 17px;
+        outline: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .principal {
+        flex-direction: column-reverse;
+    }
+
+    form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:727px) {
+    form{
+        width: 80%;        
+    }
+
+    .btn-grad{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .images .logo {
+
+        width: 210px
+    }
+
+    .images .iframe {
+
+        width: 280px;
+    }
+
+    .instruccion {
+        font-weight: 600;
+        font-size: 12px;
+        border-bottom: 1px solid rgb(46, 46, 46);
+    }
+
+    input {
+        width: 97%;
+
+    }
+
+    #textoo1,
+    #textoo2,
+    #textoo3,
+    #textoo4 {
+        font-size: 12px;
+    }
+
+    #textoo5 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .btn-grad {
+        font-size: 12px;
+        padding: 13px 20px;
+    }
+
+    .texto2{
+        font-size: 14px;
+    }
+}
+

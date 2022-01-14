@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* --------Diseño del Body------- */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image:linear-gradient(to bottom, #33ccff 25%, #0033cc 100%), url(./IMG_2331.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    
+}
+/* ---------diseño del panel central-------- */
+.padre {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #5e5e5e86;
+    height: 600px;
+    width: 700px;
+    border-radius: 30px;
+    box-shadow: black;
+
+}
+/* -----------diseño del pael de correo y correo------- */
+.hijo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.encargado, .parentezco, .enviar, .especifique{
+    width: 500px;
+    height: 50px;
+    border-radius: 15px;
+    outline: none;
+    padding: 5px;
+    font-size: 24px;
+    margin: 10;
+
+}
+
+.tel{
+    width: 130px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.correo{
+    padding: 10px;
+    margin: 10px;
+}
+
+.correo, .tel{
+    border-radius: 15px;
+    font-size: 18px;
+
+}
+
+@media screen and (max-width:767px){
+    .padre{
+        width: 600px;
+    }
+
+    .encargado, .parentezco, .enviar, .especifique{
+        width: 400px;
+    }
+
+    .correo{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .padre{
+        width: 500px;
+    }
+
+    .encargado, .parentezco, .enviar, .especifique{
+        width: 350px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .correo{
+        width: 150px;
+    }
+    .tel{
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 525px) {
+    .padre{
+        width: 400px;
+    }
+
+    .hijo{
+        flex-direction: column;
+    }
+
+    .encargado, .parentezco, .enviar, .especifique{
+        width: 300px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .correo{
+        width: 300px;
+    }
+    .tel{
+        width: 300px;
+    }
+    
+}
+@media screen and (max-width: 453px) {
+
+        .padre{
+        width: 350px;
+    }
+
+    .hijo{
+        flex-direction: column;
+    }
+
+    .encargado, .parentezco, .enviar, .especifique{
+        width: 250px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .correo{
+        width: 250px;
+    }
+    .tel{
+        width: 250px;
+    }
+}
+ @media screen and (max-width: 380px) {
+ 
+    .padre{
+        width: 300px;
+        text-align: center;
+    }
+
+    .hijo{
+        flex-direction: column;
+    }
+
+    .encargado, .parentezco, .enviar, .especifique{
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .correo{
+        width: 200px;
+    }
+    .tel{
+        width: 200px;
+    }    
+     
+ }
+
+ @media screen and (max-width:320px) {
+     
+    .padre{
+        width: 250px;
+    }
+
+    .hijo{
+        flex-direction: column;
+    }
+
+    .encargado, .parentezco, .enviar, .especifique{
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .correo{
+        width: 200px;
+    }
+    .tel{
+        width: 200px;
+    }
+     
+ }
+
+
+

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: url(./bg19.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+h1 {
+    font-size: 38px;
+    color: white;
+    text-justify: center;
+}
+
+.formulario {
+    width: 400px;
+    height: auto;
+    background-color: rgba(231, 214, 214, 0.7);
+    border-radius: 8%;
+    box-shadow: -11px 3px 20px 0px rgba(17, 56, 153, 0.45);
+
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+
+}
+
+input:focus {
+    transform: scale(1.07);
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 9px;
+}
+
+.usuario,
+.contra {
+    outline: none;
+    background: rgba(231, 214, 214, 0.507);
+    border: none;
+    border-color: rgba(17, 16, 16, 0.432);
+    margin: 5px;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 5px;
+    transition: 0.3s ease;
+    padding: 0 20px;
+    margin-bottom: 30px;
+
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 2px 15px;
+}
+
+.logo {
+    width: 310px;
+
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+
+}
+
+.iniciar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(231, 214, 214, 0.507);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+
+    
+
+}
+
+.iniciar:hover{
+    transform: scale(0.9);
+    box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 13px;
+}
+
+.iniciar span {
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.iniciar::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(65, 105, 225);
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out all;
+}
+
+.iniciar:hover::after {
+    top: 0;
+}
+
+.iniciar span:hover {
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1370px) {
+
+    .usuario,
+    .contra {
+        width: 250px;
+
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .logo {
+        width: 380px;
+        height: 380px;
+    }
+
+    .formulario {
+        width: 300px;
+    }
+
+    .usuario,
+    .contra {
+        width: 150px;
+
+    }
+}
+
+@media screen and (max-width: 1052px) {
+    .logo {
+        width: 300px;
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .logo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .usuario,
+    .contra,
+    .iniciar {
+        width: 130px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .formulario {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    body {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenedor {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .formulario {
+        width: 300px;
+    }
+
+    .usuario,
+    .contra,
+    .iniciar {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .formulario {
+        width: 250px;
+    }
+
+    .usuario,
+    .contra,
+    .iniciar {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 472px) {
+
+    .usuario,
+    .contra,
+    .iniciar {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .usuario,
+    .contra,
+    .iniciar {
+        width: 190px;
+    }
+}
